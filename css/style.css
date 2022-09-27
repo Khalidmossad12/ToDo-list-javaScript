@@ -3,11 +3,12 @@
 }
 
 body{
+    background-color: #212529 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .todo-container{
-    width: 600px;
+    /* width: 600px; */
     margin: 30px auto 0;
     background-color: #f6f6f6;
 }
@@ -87,10 +88,38 @@ body{
     text-decoration: line-through;
 }
 
+.finish-delete .finish-all{
+    float: right;
+    background-color: #03A9f4;
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.finish-delete .delete-all{
+    float: right;
+    background-color: #E91E63;
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.finish-delete .delete-all .finished{
+    text-decoration: line-through;
+}
+.finished {
+    text-decoration: line-through;
+}
+
+
 .task-stats{
     overflow: hidden;
     margin: 10px auto;
-    width: 600px;
+    /* width: 600px; */
     font-size: 12px;
 }
 

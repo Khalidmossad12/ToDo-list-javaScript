@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
     <head>
         <!--support many language-->
         <meta charset="UTF-8">
-        <!--For Responsive-->
+        <!--For Responsive--> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Khalid Mossad" />
@@ -11,30 +11,49 @@
         <meta name="keywords" content="html,css,js" />
         <title>ToDo App</title>
         <!--Css Links-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="todo-container">
-            <div class="add-task">
-                <input type="text" name="" id="">
-                <span class="plus"> + </span>
-            </div>
-            <div class="task-content">
-                <span class="no-tasks-message">No Tasks To Show</span>
-            </div>
+        <div class="Todo vh-100 ">
+            <div class="container ">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <h2 class="text-white text-center fw-bold my-5">To Do List</h2>
+                    <div class="col-md-6">
+                        <div class="todo-container">
+                            <div class="add-task">
+                                <input type="text" name="" id="">
+                                <span class="plus"> + </span>
+                            </div>
+                            <div class="task-content">
+                                <span class="no-tasks-message">No Tasks To Show</span>
+                            </div>
 
-            <div class="task-stats">
-                <div class="tasks-count">
-                    tasks <span>0</span>
-                </div>
-                <div class="tasks-completed">
-                    completed <span>0</span>
+                            <!-- Delete & finish All-->
+                            <div class="finish-delete py-3">
+                                <span class="delete-all px-3 mx-2">Delete</span>
+                                <span class="finish-all px-3">Finish</span>
+                            </div>
+
+                                    
+                            <div class="task-stats">
+                                <div class="tasks-count">
+                                    tasks <span>0</span>
+                                </div>
+                                <div class="tasks-completed">
+                                    completed <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/sweetalert2.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
